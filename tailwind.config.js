@@ -10,10 +10,8 @@ module.exports = {
         fira: ["Fira Code", "monospace"],
       },
     },
-  }, plugins: [require('daisyui')],
-  daisyui: {
-    themes: [
-      "emerald"
-    ]
-  }
+  },
+  plugins: [
+    require('daisyui')
+  ],
 }

@@ -1,9 +1,25 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faPlay } from '@fortawesome/free-solid-svg-icons';
+
+import { useEffect } from 'react'
+import { themeChange } from 'theme-change'
+
 
 export default function Home() {
+
+  const themeValues = [
+    "light",
+    "emerald",
+    "retro",
+    "business",
+    "corporate"
+  ]
+
+  useEffect(() => {
+    themeChange(false)
+  })
+
   return (
     <div className="px-8 font-fira">
       <Head>
@@ -12,13 +28,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <nav className=" float-right pt-8 dropdown dropdown-end">
+        <label tabIndex="0" className="btn m-1">Theme</label>
+        <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a data-set-theme="light">Light</a></li>
+          <li><a data-set-theme="dark">Dark</a></li>
+          <li><a data-set-theme="emerald">Emerald</a></li>
+          <li><a data-set-theme="retro">Retro</a></li>
+          <li><a data-set-theme="corporate">Corporate</a></li>
+          <li><a data-set-theme="business">Business</a></li>
+        </ul>
+      </nav>
+
       <main className="min-h-screen py-16 flex flex-col flex-1 justify-center items-center">
         <h1 className="m-0 text-6xl leading-5 text-center relative">
           Welcome to{' '}
-          <a href="https://nextjs.org" className=" link link-hover link-accent ">
+          <a href="https://nextjs.org" className=" link link-hover link-secondary">
             Next.js!
           </a>
-          <a href="https://daisyui.com" className=" w-max link link-hover link-secondary text-sm absolute right-1 top-12 ">
+          <a href="https://daisyui.com" className=" w-max link link-hover text-sm absolute right-1 top-12 ">
             w/ daisyUI!🌻
           </a>
         </h1>
@@ -32,8 +60,8 @@ export default function Home() {
           </div>
         </aside>
 
-        <div className=" flex flex-wrap items-center justify-center max-w-4xl text-neutral">
-          <div className=" card max-w-sm m-4 bg-base-100 border-2 border-neutral ">
+        <div className=" flex flex-wrap items-center justify-center max-w-4xl text-base-content ">
+          <div className=" card max-w-sm m-4 outline outline-base-content">
             <div className=" card-body">
               <h2 className=" card-title text-2xl">Documentation</h2>
               <p className=" text-xl">Find in-depth information about Next.js features and API.</p>
@@ -45,7 +73,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" card max-w-sm m-4 bg-base-100 border-2 border-neutral ">
+          <div className=" card max-w-sm m-4 outline outline-base-content">
             <div className=" card-body">
               <h2 className=" card-title text-2xl">Learn</h2>
               <p className=" text-xl">Learn about Next.js in an interactive course with quizzes!</p>
@@ -57,7 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" card max-w-sm m-4 bg-base-100 border-2 border-neutral ">
+          <div className=" card max-w-sm m-4 outline outline-base-content ">
             <div className=" card-body">
               <h2 className=" card-title text-2xl">Examples</h2>
               <p className=" text-xl">Discover and deploy boilerplate example Next.js projects.</p>
@@ -69,7 +97,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" card max-w-sm m-4 bg-base-100 border-2 border-neutral ">
+          <div className=" card max-w-sm m-4 outline outline-base-content">
             <div className=" card-body">
               <h2 className=" card-title text-2xl">Deploy</h2>
               <p className=" text-xl">Instantly deploy your Next.js site to a public URL with Vercel.</p>
@@ -83,7 +111,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex flex-1 py-8 border-t-2 justify-center items-center">
+      <footer className="flex flex-1 py-8 border-t-[3px] border-base-content justify-center items-center">
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -91,8 +119,8 @@ export default function Home() {
           className=" flex flex-grow justify-center items-center"
         >
           Powered by
-          <span className="h-4 ml-2">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <span className="ml-4 text-2xl text-base-content -rotate-90">
+            <FontAwesomeIcon icon={faPlay} />
           </span>
         </a>
       </footer>
