@@ -8,14 +8,6 @@ import { themeChange } from 'theme-change'
 
 export default function Home() {
 
-  const themeValues = [
-    "light",
-    "emerald",
-    "retro",
-    "business",
-    "corporate"
-  ]
-
   useEffect(() => {
     themeChange(false)
   })
@@ -33,7 +25,7 @@ export default function Home() {
         <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
           <li><a data-set-theme="light">Light</a></li>
           <li><a data-set-theme="dark">Dark</a></li>
-          <li><a data-set-theme="emerald">Emerald</a></li>
+          <li><a data-set-theme="cupcake">Cupcake</a></li>
           <li><a data-set-theme="retro">Retro</a></li>
           <li><a data-set-theme="corporate">Corporate</a></li>
           <li><a data-set-theme="business">Business</a></li>
