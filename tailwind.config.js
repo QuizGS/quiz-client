@@ -5,43 +5,43 @@ module.exports = {
       {
         dark: {
 
-          "primary": "#66CC8A",
+          "primary": "#1a385c",
 
-          "secondary": "#377CFB",
+          "secondary": "#f96262",
 
-          "accent": "#EA5234",
+          "accent": "#f0e64b",
 
-          "neutral": "#FFFFFF",
+          "neutral": "#848e8f",
 
-          "base-100": "#333C4D",
+          "base-100": "#1a1d20",
 
-          "info": "#3ABFF8",
+          "info": "#0ea5e9",
 
-          "success": "#36D399",
+          "success": "#01c873",
 
-          "warning": "#FBBD23",
+          "warning": "#facc15",
 
-          "error": "#F87272",
+          "error": "#ef4444",
         },
         light: {
 
-          "primary": "#66CC8A",
+          "primary": "#1a385c",
 
-          "secondary": "#377CFB",
+          "secondary": "#f96262",
 
-          "accent": "#EA5234",
+          "accent": "#f0e64b",
 
-          "neutral": "#333C4D",
+          "neutral": "#848e8f",
 
           "base-100": "#FFFFFF",
 
-          "info": "#3ABFF8",
+          "info": "#0ea5e9",
 
-          "success": "#36D399",
+          "success": "#01c873",
 
-          "warning": "#FBBD23",
+          "warning": "#facc15",
 
-          "error": "#F87272",
+          "error": "#ef4444",
         },
 
       },
