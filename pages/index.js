@@ -18,8 +18,8 @@ export default function Home() {
           <a href="https://nextjs.org" className=" link link-hover link-accent ">
             Next.js!
           </a>
-          <a href="https://nextjs.org" className=" w-max link link-hover link-secondary text-sm absolute right-1 top-12 ">
-            w/ Daisyu!🌻
+          <a href="https://daisyui.com" className=" w-max link link-hover link-secondary text-sm absolute right-1 top-12 ">
+            w/ daisyUI!🌻
           </a>
         </h1>
 
