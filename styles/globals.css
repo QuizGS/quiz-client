@@ -3,3 +3,13 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@layer components {
+	.navbar-icon {
+		@apply text-3xl hover:text-secondary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-right font-bold m-1;
+	}
+
+	.navbar-logo {
+		@apply text-3xl hover:text-primary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-right font-bold m-1 h-12 mt-auto;
+	}
+}
