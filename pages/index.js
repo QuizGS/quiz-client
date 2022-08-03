@@ -1,5 +1,6 @@
-import SidePanel from "../components/common/SidePanel";
+
 import WelcomePanel from "../components/common/WelcomePanel";
+import Sparkers from "../public/images/sparkers.svg"
 
 export default function Home() {
 
@@ -11,8 +12,8 @@ export default function Home() {
     return (
         <div className="flex">
             <WelcomePanel />
-            <main className=' w-full'>
-                <p>Hello</p>
+            <main className='flex w-full max-h-screen p-8 justify-end'>
+                <Sparkers className="w-1/2" />
             </main>
         </div>
     );

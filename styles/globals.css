@@ -6,10 +6,10 @@
 
 @layer components {
 	.navbar-icon {
-		@apply text-3xl hover:text-secondary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-bottom font-bold m-1;
+		@apply text-3xl hover:text-secondary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-right font-bold m-1;
 	}
 
 	.navbar-logo {
-		@apply text-3xl hover:text-primary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip font-bold m-1 h-12 mt-auto;
+		@apply text-3xl hover:text-primary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-right font-bold m-1 h-12 mt-auto;
 	}
 }
