@@ -1,23 +1,14 @@
-import NavBar from "./navbar";
-import SidePanel from "./SidePanel";
-
+import NavBar from "./Navbar.js";
+import SidePanel from "./SidePanel.js";
 
 const Layout = ({ children }) => {
+  return (
+    <div className="flex flex-row w-screen">
+      <NavBar />
 
-    return (
-
-        <div className='flex flex-row w-screen'>
-
-            <NavBar />
-
-            <div className="w-full">
-                {children}
-            </div>
-
-        </div>
-
-    );
-
-}
+      <div className="w-full">{children}</div>
+    </div>
+  );
+};
 
 export default Layout;
