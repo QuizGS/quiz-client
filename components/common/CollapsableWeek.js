@@ -21,7 +21,7 @@ export default function CollapsableWeek(props) {
             <li key={quiz.section} className="">
               <Link
                 key={quiz.section}
-                href={`javaCourse/week${quiz.week}/${quiz.section}`}
+                href={`javaCourse/${quiz.week}/${quiz.section}`}
               >
                 {quiz.name}
               </Link>
