@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 
 @layer components {
-	.navbar-icon {
-		@apply text-3xl hover:text-secondary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-right font-bold m-1;
-	}
+  .navbar-icon {
+    @apply tooltip tooltip-right m-1 cursor-pointer text-3xl font-bold text-base-content transition-all duration-300 ease-linear hover:text-secondary;
+  }
 
-	.navbar-logo {
-		@apply text-3xl hover:text-primary text-base-content transition-all duration-300 ease-linear cursor-pointer tooltip tooltip-right font-bold m-1 h-12 mt-auto;
-	}
+  .navbar-logo {
+    @apply tooltip tooltip-right m-1 mt-auto h-12 cursor-pointer text-3xl font-bold text-base-content transition-all duration-300 ease-linear hover:text-primary;
+  }
+
+  .main-content {
+    @apply flex w-full flex-col gap-4 p-8;
+  }
+
+  .week-list {
+    @apply h-screen w-full overflow-auto p-8;
+  }
+
+  .hide-list {
+    @apply first-of-type:hidden;
+  }
+}
+
+body {
+  overflow: hidden;
 }
