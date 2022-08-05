@@ -3,7 +3,7 @@ import SidePanel from "./SidePanel.js";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-row w-screen">
+    <div className="flex w-screen flex-row overflow-hidden">
       <NavBar />
 
       <div className="w-full">{children}</div>

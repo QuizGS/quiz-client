@@ -9,13 +9,13 @@ export const getStaticPaths = async () => {
 
   const paths = uniqueIds.map((id) => {
     return {
-      params: { quizName: id }
+      params: { quizName: id },
     };
   });
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 };
 
@@ -26,8 +26,8 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
-      problems: data
-    }
+      problems: data,
+    },
   };
 };
 
