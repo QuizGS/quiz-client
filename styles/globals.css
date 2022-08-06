@@ -14,15 +14,15 @@
   }
 
   .main-content {
-    @apply flex w-full flex-col gap-4 p-8;
+    @apply flex w-full h-screen flex-col gap-4 p-8 overflow-auto;
+  }
+
+  .main-header {
+    @apply pb-4 text-5xl font-bold text-base-content;
   }
 
   .week-list {
     @apply h-screen w-full overflow-auto p-8;
-  }
-
-  .hide-list {
-    @apply first-of-type:hidden;
   }
 }
 

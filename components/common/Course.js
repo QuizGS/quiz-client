@@ -1,32 +1,52 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import {
-  faImage,
   faFile,
   faClipboardQuestion,
-  faF,
+  faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Course(props) {
   return (
-    // TODO: everything :)
-    <section className="card bg-primary shadow-sm">
-      <div className=" card-body h-80 w-80 items-center text-center text-primary-content">
-        <i className="text-6xl">
-          {/* !!! This will be an image but for now using an icon to illustrate */}
-          <FontAwesomeIcon icon={faImage} size="2x" />
-        </i>
-        <h2 className=" card-title mt-5">{props.Name}</h2>
-        <p className="">{props.Description}</p>
-        <div className="flex flex-row gap-6">
-          <a className="text-3xl">
-            {/* INFO: Link to flashCards */}
-            <FontAwesomeIcon icon={faFile} className="rotate-90" />
-          </a>
-          <a href="\javaCourse" className="text-3xl">
-            {/* INFO: Link to quizes */}
-            <FontAwesomeIcon icon={faClipboardQuestion} />
-          </a>
+    // TODO: Go over this again im sure i can make it better
+    <section className="rounded-box flex h-max w-full min-w-[20rem] max-w-2xl flex-col bg-base-300 shadow lg:flex-row">
+      <div className="flex h-52 lg:h-auto lg:w-1/3 ">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="\images\header.jpg"
+          alt="Album"
+          className="  rounded-t-2xl object-cover object-center lg:rounded-l-2xl lg:rounded-tr-none"
+        />
+      </div>
+      <div className="card-body gap-4 text-base-content lg:w-2/3 lg:flex-row">
+        <div className="">
+          <h2 className="card-title text-3xl">{props.course.name}</h2>
+          <p>{props.course.description}</p>
         </div>
+
+        <ul className=" rounded-box ml-auto flex h-min w-min bg-accent lg:my-auto lg:flex-col [&>li]:btn [&>li]:btn-accent [&>li]:text-accent-content [&>li>svg]:text-lg ">
+          <li
+            className=" tooltip tooltip-info lg:tooltip-left"
+            data-tip="quizzes"
+          >
+            <Link href={"/javaCourse"}>
+              <FontAwesomeIcon icon={faClipboardQuestion} />
+            </Link>
+          </li>
+          <li
+            className=" tooltip tooltip-info lg:tooltip-left"
+            data-tip="flash cards"
+          >
+            <Link href={"/javaCourse"}>
+              <FontAwesomeIcon icon={faFile} rotation={90} />
+            </Link>
+          </li>
+          <li className=" tooltip tooltip-info lg:tooltip-left" data-tip="info">
+            <Link href={"/javaCourse"}>
+              <FontAwesomeIcon icon={faInfoCircle} />
+            </Link>
+          </li>
+        </ul>
       </div>
     </section>
   );
