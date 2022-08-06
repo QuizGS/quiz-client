@@ -1,5 +1,5 @@
-import SidePanel from "../../components/common/SidePanel";
-import CollapsableWeek from "../../components/common/CollapsableWeek";
+import SidePanel from "@/components/common/SidePanel";
+import CollapsableWeek from "@/components/common/CollapsableWeek";
 
 export const getStaticProps = async () => {
   const weeks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
