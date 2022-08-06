@@ -9,13 +9,13 @@ import {
 export default function Course(props) {
   return (
     // TODO: Go over this again im sure i can make it better
-    <section className="rounded-box flex h-max w-full min-w-[20rem] max-w-2xl flex-col bg-base-300 shadow lg:flex-row">
+    <section className="card rounded-box flex h-max w-full min-w-[20rem] max-w-2xl flex-col bg-base-300 shadow lg:flex-row">
       <div className="flex h-52 lg:h-auto lg:w-1/3 ">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="\images\header.jpg"
           alt="Album"
-          className="  rounded-t-2xl object-cover object-center lg:rounded-l-2xl lg:rounded-tr-none"
+          className=" daisy-border-t lg:daisy-border-l object-cover object-center"
         />
       </div>
       <div className="card-body gap-4 text-base-content lg:w-2/3 lg:flex-row">
@@ -24,7 +24,7 @@ export default function Course(props) {
           <p>{props.course.description}</p>
         </div>
 
-        <ul className=" rounded-box ml-auto flex h-min w-min bg-accent lg:my-auto lg:flex-col [&>li]:btn [&>li]:btn-accent [&>li]:text-accent-content [&>li>svg]:text-lg ">
+        <ul className=" daisy-border ml-auto flex h-min w-min bg-accent lg:my-auto lg:flex-col [&>li]:btn [&>li]:btn-accent [&>li]:text-accent-content [&>li>svg]:text-lg ">
           <li
             className=" tooltip tooltip-info lg:tooltip-left"
             data-tip="quizzes"

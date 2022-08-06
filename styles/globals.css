@@ -24,6 +24,24 @@
   .week-list {
     @apply h-screen w-full overflow-auto p-8;
   }
+
+  .daisy-border{
+    border-radius: var(--rounded-btn,1);
+  }
+
+  .daisy-border-l{
+    border-top-left-radius: var(--rounded-btn,1);
+    border-bottom-left-radius: var(--rounded-btn,1);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .daisy-border-t{
+    border-top-left-radius: var(--rounded-btn,1);
+    border-top-right-radius: var(--rounded-btn,1);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 body {
