@@ -26,6 +26,7 @@ export default function WeekList(props) {
     <div className="flex">
       <SidePanel />
       <main className=" week-list ">
+        <h1 className=" main-header">Quizzes</h1>
         {props.weeks.map((week, i) => (
           <CollapsableWeek key={i} week={week} weekNum={i + 1} />
         ))}{" "}
