@@ -1,22 +1,19 @@
-import { Children } from 'react'
+import { Children } from "react";
+import Link from "next/link";
+import QuizNavbar from "./QuizNavbar";
+import ThemeButton from "./ThemeButton";
 
-const SidePanel = ({ children }) => {
-
-    return (
-
-        <aside className="flex flex-col bg-base-200 w-1/4 max-w-lg min-w-[15rem] h-screen">
-            <figure id='courseHeader' className=" bg-primary ">
-                <img src='\images\header.jpg' ></img>
-            </figure>
-            <div className=' card-body'>
-
-                {children}
-
-            </div>
-
-        </aside>
-
-    )
-}
+import Quizspark from "../../public/images/quizspark.svg";
+const SidePanel = ({ Children }) => {
+  return (
+    <div className="flex flex-col bg-base-200 w-1/4 min-w-[15rem] h-screen">
+      <figure id="courseHeader" className=" bg-primary ">
+        <img src="\images\header.jpg"></img>
+      </figure>
+      <h2 className="card-title text-2xl">Java Course</h2>
+      <QuizNavbar />
+    </div>
+  );
+};
 
 export default SidePanel;
