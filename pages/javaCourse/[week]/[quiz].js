@@ -1,8 +1,8 @@
-import Question from "../../../components/common/Question";
-import SidePanel from "../../../components/common/SidePanel";
-import { useState, useEffect } from "react";
-import fetchQuestions from "../../../util/data/fetchQuestions";
+import Question from "@/components/common/Question";
+import SidePanel from "@/components/common/SidePanel";
+import fetchQuestions from "@/util/data/fetchQuestions";
 import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 export default function Quiz(props) {
   //this gives you the url ids
