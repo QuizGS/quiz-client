@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
-import Logo from "../../public/images/logo.svg";
+import Logo from "@/public/images/logo.svg";
 import { ThemeButton } from "./ThemeButton";
 
 export default function NavBar(props) {
