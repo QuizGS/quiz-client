@@ -25,9 +25,11 @@ export default function Quiz(props) {
       </SidePanel>
       <main className=" week-list ">
         {question.map((problem, i) => (
-          <li key={i}>
-            <a>{problem.question}</a>
-          </li>
+          <Question
+            problem={problem.question}
+            answer={problem.answer}
+            options={problem.options}
+          />
         ))}
       </main>
     </div>
