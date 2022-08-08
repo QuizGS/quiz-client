@@ -1,9 +1,9 @@
 import quizAPI from "../quizAPI";
 
-export default async function fetchQuestions(week = 0, section = 0) {
+export default async function fetchQuestions(week = 0, quizId = 0) {
   let requestPath = "questions";
   if (week > 0) requestPath += `/${week}`;
-  if (section > 0) requestPath += `/${section}`;
+  if (quizId > 0) requestPath += `/${quizId}`;
 
   const questions = await quizAPI
     .get(requestPath)

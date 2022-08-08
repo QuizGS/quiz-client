@@ -1,13 +1,19 @@
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import quizzes from "../config/courseConfig";
 
-const weekNum = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const weekNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function QuizNavbar() {
+  const [quizzes, setQuizzes] = useState([]);
+
+  useEffect(() => {
+    fetchQuizzes().then(setQuizzes);
+  }, []);
+
   return (
     <div class="overflow-auto">
       {" "}
-      {weekNum.map((thisweek) => (
+      {weekNums.map((weekNum) => (
         <div
           tabindex="0"
           class="collapse collapse-arrow border border-base-300 bg-base-100"
@@ -16,19 +22,21 @@ export default function QuizNavbar() {
             <div class="collapse-title text-xl font-medium">
               {" "}
               <li class="menu-title">
-                <span>{`Week${thisweek}`}</span>
+                <span>{`Week ${weekNum}`}</span>
               </li>
             </div>
             <div class="collapse-content">
-              {quizzes[thisweek - 1].map((quiz) => (
-                <Link href={`Week${thisweek}/${quiz.section}`}>
-                  <div key={quiz.section}>
-                    <li>
-                      <a>{quiz.name}</a>
-                    </li>
-                  </div>
-                </Link>
-              ))}
+              {quizzes
+                .filter(quiz => quiz.week === weekNum)
+                .map((quiz) => (
+                  <Link href={`Week${weekNum}/${quiz.section}`}>
+                    <div key={quiz.section}>
+                      <li>
+                        <a>{quiz.name}</a>
+                      </li>
+                    </div>
+                  </Link>
+                ))}
             </div>
           </ul>
         </div>
