@@ -7,7 +7,7 @@ export function ThemeButton(props) {
       <i
         tabIndex="0"
         id="themeIcon"
-        className="navbar-icon mb-2 not-italic outline-none"
+        className="navbar-icon mb-2 outline-none"
         data-tip="Theme"
       >
         <FontAwesomeIcon icon={faPalette} className="mx-2" />

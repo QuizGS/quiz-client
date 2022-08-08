@@ -1,4 +1,4 @@
-import Quizspark from "@/public/images/quizspark.svg";
+import Quizspark from "../../public/images/quizspark.svg";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
