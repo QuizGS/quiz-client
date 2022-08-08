@@ -6,9 +6,7 @@ export default function stepExample(props) {
   const [quizzes, setQuizzes] = useState([]);
 
   useEffect(() => {
-    fetchQuizzes(0).then((arr) => {
-      setQuizzes(arr);
-    });
+    fetchQuizzes().then(setQuizzes);
   }, []);
 
   // TODO: finish this example
