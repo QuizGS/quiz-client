@@ -27,7 +27,7 @@ const Question = (props) => {
               <label
                 key={i}
                 htmlFor={i}
-                className={`font-semibol ${clicked ? "text-red-500" : ""}`}
+                className={`font-semibol ${clicked ? "text-error" : ""}`}
               >
                 {o}
               </label>
@@ -41,9 +41,7 @@ const Question = (props) => {
               onClick={() => setClick(true)}
             />
 
-            <label
-              className={`font-semibol ${clicked ? "text-green-500" : ""}`}
-            >
+            <label className={`font-semibol ${clicked ? "text-success" : ""}`}>
               {props.answer}
             </label>
           </span>
