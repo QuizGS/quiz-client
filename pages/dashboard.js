@@ -1,5 +1,5 @@
-import Course from "@/components/common/Course";
-import SidePanel from "@/components/common/SidePanel";
+import Course from "../components/common/Course";
+import SidePanel from "../components/common/SidePanel";
 
 export default function Dashboard() {
   const course = {
