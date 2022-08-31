@@ -30,8 +30,22 @@ body {
   overflow: hidden;
 }
 
+.traingle-t-l {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(var(--in)) 50%,
+    hsl(var(--b1)) 50%
+  );
+
+  box-shadow: -0.06rem -0.06rem 0.5rem hsl(var(--inc, var(--nc)) / 0.2);
+}
+
 .daisy-border {
   border-radius: var(--rounded-btn, 1);
+}
+
+.daisy-border-box {
+  border-radius: var(--rounded-box, 1);
 }
 
 .daisy-border-l {

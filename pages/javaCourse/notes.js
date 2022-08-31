@@ -1,7 +1,12 @@
+import Note from "@/components/common/Note";
+
 export default function Notes() {
   return (
-    <div>
-      <h1>Notes</h1>
-    </div>
+    <main className="main-content">
+      <h1 className=" main-header">Notes</h1>
+      <Note />
+      <Note />
+      <Note />
+    </main>
   );
 }
