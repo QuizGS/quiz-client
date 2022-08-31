@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import {
-  faFile,
   faClipboardQuestion,
-  faInfoCircle
+  faTarp,
+  faPen,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Course(props) {
@@ -15,7 +15,7 @@ export default function Course(props) {
         <img
           src="\images\header.jpg"
           alt="Album"
-          className=" daisy-border-t lg:daisy-border-l object-cover object-center"
+          className="daisy-border-t lg:daisy-border-l object-cover object-center"
         />
       </div>
       <div className="card-body gap-4 text-base-content lg:w-2/3 lg:flex-row">
@@ -24,9 +24,9 @@ export default function Course(props) {
           <p>{props.course.description}</p>
         </div>
 
-        <ul className=" daisy-border ml-auto flex h-min w-min bg-accent lg:my-auto lg:flex-col [&>li]:btn [&>li]:btn-accent [&>li]:text-accent-content [&>li>svg]:text-lg ">
+        <ul className="daisy-border ml-auto flex h-min w-min bg-accent lg:my-auto lg:flex-col [&>li]:btn [&>li]:btn-accent [&>li]:text-accent-content [&>li>svg]:text-lg ">
           <li
-            className=" tooltip tooltip-info lg:tooltip-left"
+            className="tooltip tooltip-info lg:tooltip-left"
             data-tip="quizzes"
           >
             <Link href={"/javaCourse"}>
@@ -34,16 +34,16 @@ export default function Course(props) {
             </Link>
           </li>
           <li
-            className=" tooltip tooltip-info lg:tooltip-left"
+            className="tooltip tooltip-info lg:tooltip-left"
             data-tip="flash cards"
           >
             <Link href={"/flashcard"}>
-              <FontAwesomeIcon icon={faFile} rotation={90} />
+              <FontAwesomeIcon icon={faTarp} />
             </Link>
           </li>
-          <li className=" tooltip tooltip-info lg:tooltip-left" data-tip="info">
-            <Link href={"/javaCourse"}>
-              <FontAwesomeIcon icon={faInfoCircle} />
+          <li className="tooltip tooltip-info lg:tooltip-left" data-tip="notes">
+            <Link href={"/javaCourse/notes"} className="relative">
+              <FontAwesomeIcon icon={faPen} />
             </Link>
           </li>
         </ul>
