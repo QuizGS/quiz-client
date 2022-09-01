@@ -38,6 +38,7 @@ body {
   );
 
   box-shadow: -0.06rem -0.06rem 0.5rem hsl(var(--inc, var(--nc)) / 0.2);
+
 }
 
 .daisy-border {

@@ -2,8 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import {
   faClipboardQuestion,
+
   faTarp,
   faPen,
+
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Course(props) {
@@ -38,7 +40,10 @@ export default function Course(props) {
             data-tip="flash cards"
           >
             <Link href={"/flashcard"}>
+
               <FontAwesomeIcon icon={faTarp} />
+
+          
             </Link>
           </li>
           <li className="tooltip tooltip-info lg:tooltip-left" data-tip="notes">
