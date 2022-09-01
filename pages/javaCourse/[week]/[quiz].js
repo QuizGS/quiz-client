@@ -1,8 +1,8 @@
 import Question from "@/components/common/Question";
 import SidePanel from "@/components/common/SidePanel";
+import { useState, useEffect } from "react";
 import fetchQuestions from "@/util/data/fetchQuestions";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 
 export default function Quiz(props) {
   //this gives you the url ids
@@ -26,6 +26,7 @@ export default function Quiz(props) {
       <main className=" week-list ">
         {question.map((problem, i) => (
           <Question
+            key={i}
             problem={problem.question}
             answer={problem.answer}
             options={problem.options}
