@@ -1,5 +1,5 @@
-import WelcomePanel from "@/components/common/WelcomePanel";
-import Sparkers from "@/public/images/sparkers.svg";
+import WelcomePanel from "../components/common/WelcomePanel";
+import Sparkers from "../public/images/sparkers.svg";
 import { useEffect, useRef } from "react";
 
 export default function Home() {

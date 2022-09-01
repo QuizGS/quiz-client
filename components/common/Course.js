@@ -3,7 +3,7 @@ import Link from "next/link";
 import {
   faFile,
   faClipboardQuestion,
-  faInfoCircle,
+  faInfoCircle
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Course(props) {
@@ -37,7 +37,7 @@ export default function Course(props) {
             className=" tooltip tooltip-info lg:tooltip-left"
             data-tip="flash cards"
           >
-            <Link href={"/javaCourse"}>
+            <Link href={"/flashcard"}>
               <FontAwesomeIcon icon={faFile} rotation={90} />
             </Link>
           </li>
