@@ -1,11 +1,10 @@
 export default function NoteTextBox() {
   return (
-    <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+    <div className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
       <form>
-        <div class="form-group mb-6">
+        <div className="form-group mb-6">
           <input
-            type="email"
-            class="input w-full max-w-xs"
+            className="input w-full max-w-xs"
             id="note"
             placeholder="Type note here"
           />
@@ -13,17 +12,17 @@ export default function NoteTextBox() {
 
         <button
           type="submit"
-          class="
+          className="
       w-full
+      rounded
+      bg-blue-600
       px-6
       py-2.5
-      bg-blue-600
-      text-white
-      font-medium
       text-xs
-      leading-tight
+      font-medium
       uppercase
-      rounded
+      leading-tight
+      text-white
       shadow-md"
         >
           Add

@@ -15,7 +15,7 @@ export default function Course(props) {
         <img
           src="\images\header.jpg"
           alt="Album"
-          className="daisy-border-t lg:daisy-border-l object-cover object-center"
+          className="lg:daisy-border-l object-cover object-center"
         />
       </div>
       <div className="card-body gap-4 text-base-content lg:w-2/3 lg:flex-row">
