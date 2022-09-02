@@ -1,5 +1,4 @@
 import Note from "@/components/common/Note";
-import NoteTextBox from "@/components/common/NoteTextBox";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
