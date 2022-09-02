@@ -24,6 +24,14 @@
   .week-list {
     @apply h-screen w-full overflow-auto p-8;
   }
+
+  .title-input {
+    @apply w-full bg-primary text-2xl font-black focus-visible:outline-none;
+  }
+
+  .note-input {
+    @apply textarea m-0 w-full rounded-none bg-primary p-0 text-base focus-visible:outline-none;
+  }
 }
 
 body {
