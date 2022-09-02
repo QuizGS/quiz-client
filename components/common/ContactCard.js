@@ -1,16 +1,19 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function ContactCard(props) {
   return (
-    <section className="card bg-primary shadow-sm">
+    <section className="card w-64 bg-primary shadow-sm">
       <div className=" card-body items-center text-center text-primary-content">
         <i className="text-6xl">
-          {/* !!! This will be an image but for now using an icon to illustrate */}
-          <FontAwesomeIcon icon={faUser} />
+          <div class="avatar">
+            <div class="w-24 rounded-full">
+              <img src={props.img} alt="avatar_image" />
+            </div>
+          </div>
         </i>
-        <h2 className=" card-title">{props.Name}</h2>
-        <p className="">{props.Bio}</p>
+        <a class="link" href={props.link}>
+          <h2 className=" card-title">{props.Name}</h2>
+        </a>
       </div>
     </section>
   );

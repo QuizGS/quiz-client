@@ -6,7 +6,8 @@ export const getStaticProps = async () => {
   var weekQuiz = [];
 
   for (let index = 1; index <= weeks.length; index++) {
-    const url = "https://quizgs.herokuapp.com/api/quizzes/" + index.toString();
+    const url =
+      "https://quizgs.herokuapp.com/api/quizzes/week/" + index.toString();
 
     var res = await fetch(url);
     var data = await res.json();
@@ -16,8 +17,8 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      weeks: weekQuiz,
-    },
+      weeks: weekQuiz
+    }
   };
 };
 

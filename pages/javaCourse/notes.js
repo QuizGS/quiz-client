@@ -1,4 +1,5 @@
 import Note from "@/components/common/Note";
+import NoteTextBox from "@/components/common/NoteTextBox";
 
 export default function Notes() {
   return (
@@ -7,6 +8,7 @@ export default function Notes() {
       <Note />
       <Note />
       <Note />
+      <NoteTextBox />
     </main>
   );
 }

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Note(props) {
   return (
     <div className="daisy-border-box group card relative overflow-visible bg-info p-4 text-info-content">
-      <h2 className="card-title">Quiz 2 > Question 3</h2>
+      <h2 className="card-title">Quiz 2 Question 3</h2>
       <p>This Questions was very hard besties</p>
 
       <div className="absolute bottom-0 right-0 h-6 w-6 overflow-hidden">
