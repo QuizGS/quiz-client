@@ -7,37 +7,33 @@ export default function About() {
         <div className="flex h-full max-w-4xl flex-col items-center justify-around p-8 text-center">
           <section className="flex flex-col items-center gap-8">
             <h1 className="card-title text-4xl font-bold">About QuizSpark</h1>
-            <p className=" text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              tincidunt mauris at arcu eleifend volutpat. Proin placerat
-              condimentum orci ac tincidunt. Phasellus imperdiet dolor auctor
-              aliquet vestibulum. Aenean venenatis vitae lectus ornare feugiat.
-              Fusce sed est eros. Aliquam posuere odio lacinia purus cursus
-              dictum. Praesent pellentesque feugiat erat in varius. Fusce non
-              nunc condimentum, viverra neque vitae, accumsan leo. Praesent
-              felis eros, finibus a nunc nec, faucibus eleifend mi.
+            <p className=" text-xl indent-2">
+              QuizSpark contains all multiple choices questions from the
+              GenSpark Java fullstack curriculum. It is designed to help
+              GenSpark students to review key Java concepts in a user-friendly
+              UI. Questions are sorted by topics and by weeks. There is also a
+              flashcard version available.
             </p>
           </section>
 
-          <section className="flex flex-col items-center gap-8">
+          <section className="flex flex-col items-center gap-4">
             <h1 className=" card-title text-4xl font-bold">The Team</h1>
             {/* TODO: contact card needs props to pass to to show each person and this should be a forloop kinda thing*/}
-            <div className="flex flex-row flex-wrap justify-center gap-8">
+            <div className="flex justify-evenly gap-8">
               <ContactCard
-                Name="Person Name"
-                Bio="Frogs are very cool 🐸🐸🐸"
+                Name="John O'Rourke"
+                img="https://avatars.githubusercontent.com/u/34101601?v=4"
+                link="https://github.com/johnoro"
               />
               <ContactCard
-                Name="Person Name"
-                Bio="Frogs are very cool 🐸🐸🐸"
+                Name="Chris Toph"
+                img="https://avatars.githubusercontent.com/u/36116606?v=4"
+                link="https://github.com/TophC7"
               />
               <ContactCard
-                Name="Person Name"
-                Bio="Frogs are very cool 🐸🐸🐸"
-              />
-              <ContactCard
-                Name="Person Name"
-                Bio="Frogs are very cool 🐸🐸🐸"
+                Name="Abby Xie"
+                img="https://avatars.githubusercontent.com/u/60021932?v=4"
+                link="https://github.com/zzbbcsd"
               />
             </div>
           </section>
