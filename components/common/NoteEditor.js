@@ -4,7 +4,7 @@ export default function NoteEditor(props) {
       <div className="modal-box flex flex-col gap-6 bg-primary  text-primary-content">
         {/* <input type="text" placeholder="Title" className="title-input" /> */}
         <h3 className="w-full bg-primary text-2xl font-black">
-          {"Note Id: " + props.quizId || "New Note"}
+          Note Id: {props.quizId || "New Note"}
         </h3>
         <textarea
           className="note-input"
