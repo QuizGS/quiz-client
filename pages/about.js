@@ -47,7 +47,7 @@ export default function About() {
                   img={getImgLink(member.userId)}
                   link={getGithubLink(member.userName)}
                 />
-              ))};
+              ))}
             </div>
           </section>
         </div>

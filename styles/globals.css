@@ -63,3 +63,14 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+.contact-card:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background: hsl(var(--pf,var(--p))/var(--tw-bg-opacity));
+}
+
+.contact-card:focus {
+  text-decoration: underline;
+  background: hsl(var(--pf,var(--p))/var(--tw-bg-opacity));
+}
