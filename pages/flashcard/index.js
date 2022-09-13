@@ -29,8 +29,8 @@ export default function Flashcardpage(props) {
   return (
     <div className="flex">
       <SidePanel />
-      <main className=" week-list ">
-        <h1 className=" main-header">Flashcards </h1>
+      <main className="week-list">
+        <h1 className="main-header">Flashcards</h1>
         <FlashcardArray cards={props.quizQuestions} />
       </main>
     </div>

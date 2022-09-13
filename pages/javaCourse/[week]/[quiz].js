@@ -20,10 +20,10 @@ export default function Quiz(props) {
   return (
     <div className="flex">
       <SidePanel>
-        <h1 className=" card-title text-base-content">Week {week}</h1>
-        <h2 className=" text-base-content">Quiz {quiz}</h2>
+        <h1 className="card-title text-base-content">Week {week}</h1>
+        <h2 className="text-base-content">Quiz {quiz}</h2>
       </SidePanel>
-      <main className=" week-list ">
+      <main className="week-list">
         {question.map((problem, i) => (
           <Question
             key={i}

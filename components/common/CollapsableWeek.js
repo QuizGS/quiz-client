@@ -21,10 +21,10 @@ export default function CollapsableWeek(props) {
 
       <ul id={weekId} className="menu rounded-box menu-compact hidden p-4 pt-0">
         {props.week.map((quiz) => (
-          <li key={quiz.section} className="">
+          <li key={quiz.id} className="">
             <Link
-              key={quiz.section}
-              href={`javaCourse/${quiz.week}/${quiz.section}`}
+              key={quiz.id}
+              href={`javaCourse/${quiz.week}/${quiz.id}`}
             >
               {quiz.name}
             </Link>

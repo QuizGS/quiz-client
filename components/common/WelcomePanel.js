@@ -1,6 +1,7 @@
 import Quizspark from "@/public/images/quizspark.svg";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const WelcomePanel = ({ children }) => {
   return (
@@ -11,9 +12,9 @@ const WelcomePanel = ({ children }) => {
           Welcome to QuizSpark!
         </h1>
         <div className=" card-actions justify-center">
-          <a href="/dashboard" className="btn btn-accent">
+          <Link href="/dashboard" className="btn btn-accent">
             <FontAwesomeIcon icon={faArrowRight} />
-          </a>
+          </Link>
         </div>
       </div>
     </aside>

@@ -1,6 +1,26 @@
 import ContactCard from "@/components/common/ContactCard";
 
 export default function About() {
+  const getImgLink = (userId) => `https://avatars.githubusercontent.com/u/${userId}?v=4`;
+  const getGithubLink = (userName) => `https://github.com/${userName}`;
+  const team = [
+    {
+      name: "John O'Rourke",
+      userId: 34101601,
+      userName: "johnoro",
+    },
+    {
+      name: "Chris Toph",
+      userId: 36116606,
+      userName: "TophC7",
+    },
+    {
+      name: "Abby Xie",
+      userId: 60021932,
+      userName: "zzbbcsd",
+    },
+  ];
+
   return (
     <main className="main-content ">
       <div className="card h-full w-full items-center bg-base-200 shadow">
@@ -20,21 +40,14 @@ export default function About() {
             <h1 className=" card-title text-4xl font-bold">The Team</h1>
             {/* TODO: contact card needs props to pass to to show each person and this should be a forloop kinda thing*/}
             <div className="flex justify-evenly gap-8">
-              <ContactCard
-                Name="John O'Rourke"
-                img="https://avatars.githubusercontent.com/u/34101601?v=4"
-                link="https://github.com/johnoro"
-              />
-              <ContactCard
-                Name="Chris Toph"
-                img="https://avatars.githubusercontent.com/u/36116606?v=4"
-                link="https://github.com/TophC7"
-              />
-              <ContactCard
-                Name="Abby Xie"
-                img="https://avatars.githubusercontent.com/u/60021932?v=4"
-                link="https://github.com/zzbbcsd"
-              />
+              {team.map((member) => (
+                <ContactCard
+                  key={member.name}
+                  name={member.name}
+                  img={getImgLink(member.userId)}
+                  link={getGithubLink(member.userName)}
+                />
+              ))};
             </div>
           </section>
         </div>
