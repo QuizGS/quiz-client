@@ -7,8 +7,12 @@ const Question = (props) => {
         <h1 className="card-title pb-8 text-4xl font-bold text-primary ">
           {props.problem}
         </h1>
-        
-        <OptionsList options={props.options} answer={props.answer} />
+
+        <OptionsList
+          options={props.options}
+          answer={props.answer}
+          onClick={props.handleClick}
+        />
       </div>
     </section>
   );

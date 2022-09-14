@@ -26,7 +26,7 @@ export default function WeekList(props) {
       <main className="week-list">
         <h1 className="main-header">Quizzes</h1>
         {props.weeks.map((week, i) => (
-          <CollapsableWeek key={i} week={week} weekNum={i + 1} />
+          <CollapsableWeek key={i} quizzes={week} weekNum={i + 1} />
         ))}{" "}
       </main>
     </div>

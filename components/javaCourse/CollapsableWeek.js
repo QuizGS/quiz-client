@@ -1,8 +1,19 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 
-export default function CollapsableWeek(props) {
-  let checkBoxId = "btnControlWeek" + props.weekNum.toString();
-  let weekId = "week" + props.weekNum.toString();
+export default function CollapsableWeek({ quizzes, weekNum }) {
+  let checkBoxId = "btnControlWeek" + weekNum.toString();
+  let weekId = "week" + weekNum.toString();
+  const router = useRouter();
+
+  const handleClick = ({ week, id, name, section }) => {
+    router.push(
+      {
+        pathname: `javaCourse/${week}/${id}`,
+        query: { name, section },
+      },
+      `javaCourse/${week}/${id}`
+    );
+  };
 
   return (
     <label
@@ -17,20 +28,17 @@ export default function CollapsableWeek(props) {
       }}
     >
       <input id={checkBoxId} type="checkbox" className="hidden" />
-      <h1 className="p-4 text-xl font-medium">Week {props.weekNum}</h1>
+      <h1 className="p-4 text-xl font-medium">Week {weekNum}</h1>
 
       <ul id={weekId} className="menu rounded-box menu-compact hidden p-4 pt-0">
-        {props.week.map((quiz) => (
+        {quizzes.map((quiz) => (
           <li key={quiz.id} className="">
-            <Link
-              key={quiz.id}
-              href={`javaCourse/${quiz.week}/${quiz.id}`}
-            >
+            <a href="#" onClick={() => handleClick(quiz)}>
               {quiz.name}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
     </label>
   );
-};
+}
