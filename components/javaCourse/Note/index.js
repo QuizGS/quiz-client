@@ -1,7 +1,9 @@
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NoteEditor from "./NoteEditor";
+export { NoteEditor };
 
+// TODO: properly use props
 export default function Note(props) {
   return (
     <>

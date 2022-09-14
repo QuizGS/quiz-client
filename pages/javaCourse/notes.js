@@ -1,19 +1,19 @@
-import Note from "@/components/common/Note";
-import NoteEditor from "@/components/common/NoteEditor";
+import Note from "@/components/javaCourse/Note";
+import { NoteEditor } from "@/components/javaCourse/Note";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import fetchNotes from "@/util/data/fetchNotes";
 
+// TODO: fetch notes from database based on currently authenticated user
+// TODO: add ability/view to add notes from quiz view; each note should be associated with one quiz
 export const getStaticProps = async () => {
   let userId = 1; //hard coded for now
 
-  const url = "https://quizgs.herokuapp.com/api/notes/" + userId.toString();
-
-  var res = await fetch(url);
-  var data = await res.json();
+  const notes = await fetchNotes({ userId });
 
   return {
     props: {
-      notes: data,
+      notes,
     },
   };
 };

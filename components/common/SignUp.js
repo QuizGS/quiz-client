@@ -43,7 +43,8 @@ export default function SignUp() {
       email: email,
       password: password,
     };
-    // send this user to BE
+
+    // TODO: send this user to BE
   };
 
   return (

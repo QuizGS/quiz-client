@@ -5,6 +5,7 @@ import { ThemeButton } from "./ThemeButton";
 
 export default function NavBar(props) {
   return (
+    // TODO: add more options; i.e. logout, potentially settings (w/ theme toggle within), etc.
     // navbar to be placed in left of screen
     //TODO: change to <Link/>
     <nav className="navbar z-50 h-screen w-20 flex-col gap-8 bg-base-300 p-5">

@@ -5,6 +5,9 @@ const nextConfig = {
 };
 
 module.exports = {
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find(
       (rule) => rule.test && rule.test.test(".svg")

@@ -4,7 +4,7 @@ import { themeChange } from "theme-change";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import Layout from "@/components/common/Layout.js";
+import Layout from "@/components/common/Layout";
 
 config.autoAddCss = false;
 
