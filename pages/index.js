@@ -3,6 +3,7 @@ import Sparkers from "../public/images/sparkers.svg";
 import { useEffect, useRef } from "react";
 
 export default function Home() {
+  // TODO: figure out a better way to have this functionality
   //hiding elements from layout we dont want
   useEffect(() => {
     document.querySelector("#coursesIcon").style.display = "none";
@@ -17,4 +18,4 @@ export default function Home() {
       </main>
     </div>
   );
-};
+}

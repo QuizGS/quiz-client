@@ -1,4 +1,5 @@
 // TODO: implement actual functionality using the API
+// TODO: tie to a specific note (i.e. from the edit button on the notes in the javaCourse notes view)
 export default function NoteTextBox() {
   return (
     <div className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
@@ -31,4 +32,4 @@ export default function NoteTextBox() {
       </form>
     </div>
   );
-};
+}
