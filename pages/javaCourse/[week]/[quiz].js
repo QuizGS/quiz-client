@@ -12,10 +12,10 @@ export default function Quiz(props) {
   const [question, setQuestion] = useState([]);
 
   useEffect(() => {
-    fetchQuestions(week, quiz).then((arr) => {
+    fetchQuestions({quizId: quiz}).then((arr) => {
       setQuestion(arr);
     });
-  });
+  }, []);
 
   return (
     <div className="flex">
