@@ -1,4 +1,4 @@
-import Course from "@/components/common/Course";
+import Course from "@/components/dashboard/Course";
 import SidePanel from "@/components/common/SidePanel";
 
 export default function Dashboard() {

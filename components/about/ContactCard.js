@@ -18,4 +18,4 @@ export default function ContactCard(props) {
       </Link>
     </section>
   );
-}
+};

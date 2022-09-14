@@ -1,5 +1,5 @@
 import SidePanel from "@/components/common/SidePanel";
-import CollapsableWeek from "@/components/common/CollapsableWeek";
+import CollapsableWeek from "@/components/javaCourse/CollapsableWeek";
 import fetchQuizzes from "@/util/data/fetchQuizzes";
 
 export const getStaticProps = async () => {

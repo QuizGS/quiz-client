@@ -1,3 +1,4 @@
+// TODO: implement actual functionality using the API
 export default function NoteTextBox() {
   return (
     <div className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
@@ -30,4 +31,4 @@ export default function NoteTextBox() {
       </form>
     </div>
   );
-}
+};

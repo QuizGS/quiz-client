@@ -1,4 +1,4 @@
-import ContactCard from "@/components/common/ContactCard";
+import ContactCard from "@/components/about/ContactCard";
 
 export default function About() {
   const getImgLink = (userId) => `https://avatars.githubusercontent.com/u/${userId}?v=4`;

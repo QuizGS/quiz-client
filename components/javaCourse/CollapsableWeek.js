@@ -33,4 +33,4 @@ export default function CollapsableWeek(props) {
       </ul>
     </label>
   );
-}
+};

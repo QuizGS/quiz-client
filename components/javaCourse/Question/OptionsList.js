@@ -5,10 +5,6 @@ const OptionsList = ({ options, answer }) => {
     const [clicked, setClick] = useState(false);
     const [allOptions, setOptions] = useState([]);
 
-    // useEffect(() => {
-    //     setRandomIndex(getRandomInt(options.length+1));
-    // }, [answer, options.length]);
-
     useEffect(() => {
         const randomIndex = getRandomInt(options.length+1);
         const newOptions = options.map((option) => {

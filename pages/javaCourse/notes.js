@@ -1,6 +1,7 @@
-import Note from "@/components/common/Note";
-import NoteTextBox from "@/components/common/NoteTextBox";
+import Note from "@/components/javaCourse/Note";
+import { NoteTextBox } from "@/components/javaCourse/Note";
 
+// TODO: fetch notes from database based on currently authenticated user
 export default function Notes() {
   return (
     <main className="main-content">
@@ -11,4 +12,4 @@ export default function Notes() {
       <NoteTextBox />
     </main>
   );
-}
+};

@@ -37,4 +37,4 @@ export function ThemeButton(props) {
       </ul>
     </div>
   );
-}
+};

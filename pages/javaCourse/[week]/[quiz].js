@@ -1,5 +1,5 @@
-import Question from "@/components/common/Question";
 import SidePanel from "@/components/common/SidePanel";
+import Question from "@/components/javaCourse/Question";
 import { useState, useEffect } from "react";
 import fetchQuestions from "@/util/data/fetchQuestions";
 import { useRouter } from "next/router";
@@ -35,4 +35,4 @@ export default function Quiz(props) {
       </main>
     </div>
   );
-}
+};

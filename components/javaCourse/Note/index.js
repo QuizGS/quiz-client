@@ -1,6 +1,10 @@
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import NoteTextBox from "./NoteTextBox";
+export { NoteTextBox };
+
+// TODO: properly use props
 export default function Note(props) {
   return (
     <div className="daisy-border-box group card relative overflow-visible bg-info p-4 text-info-content">
@@ -16,4 +20,4 @@ export default function Note(props) {
       </button>
     </div>
   );
-}
+};

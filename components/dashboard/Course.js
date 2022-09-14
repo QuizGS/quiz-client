@@ -50,4 +50,4 @@ export default function Course(props) {
       </div>
     </section>
   );
-}
+};
