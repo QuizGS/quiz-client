@@ -6,16 +6,16 @@ export const getStaticProps = async () => {
   const weeks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   let quizzesByWeek = [];
 
-  await fetchQuizzes().then((quizzes) => {
-    weeks.forEach((week) => {
-      quizzesByWeek.push(quizzes.filter((quiz) => quiz.week === week));
-    });
+  const quizzes = await fetchQuizzes();
+
+  weeks.forEach((week) => {
+    quizzesByWeek.push(quizzes.filter((quiz) => quiz.week === week));
   });
 
   return {
     props: {
-      weeks: quizzesByWeek
-    }
+      weeks: quizzesByWeek,
+    },
   };
 };
 
@@ -31,4 +31,4 @@ export default function WeekList(props) {
       </main>
     </div>
   );
-};
+}

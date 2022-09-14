@@ -9,7 +9,7 @@ export default function ContactCard(props) {
           <i className="text-6xl">
             <div className="avatar">
               <div className="w-24 rounded-full">
-                <Image src={props.img} alt="avatar_image" layout='fill' />
+                <Image src={props.img} alt="avatar_image" layout="fill" />
               </div>
             </div>
           </i>
@@ -18,4 +18,4 @@ export default function ContactCard(props) {
       </Link>
     </section>
   );
-};
+}

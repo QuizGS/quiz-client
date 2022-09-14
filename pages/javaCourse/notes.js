@@ -2,6 +2,7 @@ import Note from "@/components/javaCourse/Note";
 import { NoteTextBox } from "@/components/javaCourse/Note";
 
 // TODO: fetch notes from database based on currently authenticated user
+// TODO: add ability/view to add notes from quiz view; each note should be associated with one quiz
 export default function Notes() {
   return (
     <main className="main-content">
@@ -12,4 +13,4 @@ export default function Notes() {
       <NoteTextBox />
     </main>
   );
-};
+}

@@ -1,7 +1,8 @@
 import ContactCard from "@/components/about/ContactCard";
 
 export default function About() {
-  const getImgLink = (userId) => `https://avatars.githubusercontent.com/u/${userId}?v=4`;
+  const getImgLink = (userId) =>
+    `https://avatars.githubusercontent.com/u/${userId}?v=4`;
   const getGithubLink = (userName) => `https://github.com/${userName}`;
   const team = [
     {
@@ -22,12 +23,12 @@ export default function About() {
   ];
 
   return (
-    <main className="main-content ">
+    <main className="main-content">
       <div className="card h-full w-full items-center bg-base-200 shadow">
         <div className="flex h-full max-w-4xl flex-col items-center justify-around p-8 text-center">
           <section className="flex flex-col items-center gap-8">
             <h1 className="card-title text-4xl font-bold">About QuizSpark</h1>
-            <p className=" text-xl indent-2">
+            <p className="indent-2 text-xl">
               QuizSpark contains all multiple choices questions from the
               GenSpark Java fullstack curriculum. It is designed to help
               GenSpark students to review key Java concepts in a user-friendly
@@ -37,8 +38,7 @@ export default function About() {
           </section>
 
           <section className="flex flex-col items-center gap-4">
-            <h1 className=" card-title text-4xl font-bold">The Team</h1>
-            {/* TODO: contact card needs props to pass to to show each person and this should be a forloop kinda thing*/}
+            <h1 className="card-title text-4xl font-bold">The Team</h1>
             <div className="flex justify-evenly gap-8">
               {team.map((member) => (
                 <ContactCard

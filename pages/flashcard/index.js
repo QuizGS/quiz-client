@@ -5,24 +5,25 @@ import fetchQuestions from "@/util/data/fetchQuestions";
 export const getStaticProps = async () => {
   const data = await fetchQuestions();
   let questions = [];
-  console.log(data);
   data.forEach((problem, index) => {
     const prob = {
       id: index,
       front: problem.question,
-      back: problem.answer
+      back: problem.answer,
     };
     questions.push(prob);
   });
 
+  // randomizes order
   questions.sort(() => Math.random() - 0.5);
 
   return {
-    props: { questions }
+    props: { questions },
   };
 };
 
 // TODO: rewrite to instead use daisyui's card and/or carousel
+// TODO: add options to only have cards by a certain week, quiz, etc.
 export default function FlashcardPage(props) {
   return (
     <div className="flex">
