@@ -3,14 +3,14 @@ import getRandomInt from "@/util/randomInt";
 
 const OptionsList = ({ options, answer }) => {
     const [clicked, setClick] = useState(false);
-    const [randomIndex, setRandomIndex] = useState(0);
     const [allOptions, setOptions] = useState([]);
 
-    useEffect(() => {
-        setRandomIndex(getRandomInt(options.length+1));
-    }, [answer]);
+    // useEffect(() => {
+    //     setRandomIndex(getRandomInt(options.length+1));
+    // }, [answer, options.length]);
 
     useEffect(() => {
+        const randomIndex = getRandomInt(options.length+1);
         const newOptions = options.map((option) => {
         return { text: option, style: "text-error" };
         });
