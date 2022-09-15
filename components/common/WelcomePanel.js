@@ -1,15 +1,14 @@
 import Quizspark from "@/public/images/quizspark.svg";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import AccountAccess from "./AccountAccess";
 
 const WelcomePanel = ({ children }) => {
   return (
     <aside className="flex h-screen min-w-max max-w-lg flex-col bg-base-200">
-      <div className=" card-body justify-center gap-8 accent-accent">
+      <div className="card-body justify-center gap-8 accent-accent">
         <Quizspark className="mx-auto w-2/3" />
 
-        <SignUp />
-        <SignIn />
+        <AccountAccess type="signup" />
+        <AccountAccess type="signin" />
       </div>
     </aside>
   );
