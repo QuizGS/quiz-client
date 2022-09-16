@@ -1,5 +1,5 @@
 import SidePanel from "@/components/common/SidePanel";
-import Question from "@/components/javaCourse/Question";
+import Question from "@/components/javaCourse/Question/Question";
 import { useState, useEffect } from "react";
 import fetchQuestions from "@/util/data/fetchQuestions";
 import { useRouter } from "next/router";
@@ -28,21 +28,17 @@ export default function Quiz(props) {
   return (
     <div className="flex">
       <SidePanel>
-        <div className="card h-screen bg-base-100">
-          <div className="card-body">
-            <h1 className="card-title text-base-content">Week {week}</h1>
-            <h3 className="text-base-content">Section {section}</h3>
-            <h2 className="text-base-content">{name}</h2>
-            <div
-              className="radial-progress"
-              style={{ "--value": percentageComplete }}
-            >
-              {percentageComplete}%
-            </div>
-          </div>
+        <h2 className="card-title text-base-content">Week {week}</h2>
+        <h3 className="text-base-content">Section {section}</h3>
+        <h3 className="text-base-content">{name}</h3>
+        <div
+          className="radial-progress"
+          style={{ "--value": percentageComplete }}
+        >
+          {percentageComplete}%
         </div>
       </SidePanel>
-      <main className="week-list">
+      <main className="question-list">
         {questions.map((problem, i) => (
           <Question
             key={i}

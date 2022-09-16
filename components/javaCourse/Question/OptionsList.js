@@ -28,7 +28,7 @@ const OptionsList = ({ options, answer, onClick }) => {
             type="radio"
             name="option"
             onClick={handleClick}
-            className="radio radio-primary radio-sm mt-[0.375rem] checked:radio-secondary"
+            className="radio radio-primary radio-xs mt-[0.375rem] checked:radio-secondary"
           />
           <label className={`font-semibold ${clicked ? style : ""}`}>
             {text}

@@ -2,7 +2,7 @@ import OptionsList from "./OptionsList";
 
 const Question = (props) => {
   return (
-    <section className="card max-w-4xl scale-95 bg-base-200 shadow shadow-base-300 transition-all duration-300 ease-linear hover:scale-100 hover:bg-base-300 hover:shadow-md">
+    <section className="card max-w-4xl scale-[.99] bg-base-200 shadow shadow-base-300 transition-all duration-300 ease-linear hover:scale-100  hover:shadow-lg">
       <div className="card-body text-base-content">
         <h1 className="card-title pb-8 text-4xl font-bold text-primary ">
           {props.problem}

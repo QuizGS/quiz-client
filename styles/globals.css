@@ -25,6 +25,10 @@
     @apply h-screen w-full overflow-auto p-8;
   }
 
+  .question-list {
+    @apply h-screen w-full space-y-4 overflow-auto p-8;
+  }
+
   .title-input {
     @apply w-full bg-primary text-2xl font-black focus-visible:outline-none;
   }
@@ -79,10 +83,10 @@ body {
 .contact-card:hover {
   cursor: pointer;
   text-decoration: underline;
-  background: hsl(var(--pf,var(--p))/var(--tw-bg-opacity));
+  background: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
 }
 
 .contact-card:focus {
   text-decoration: underline;
-  background: hsl(var(--pf,var(--p))/var(--tw-bg-opacity));
+  background: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
 }

@@ -5,14 +5,14 @@ import HeaderImg from "@/public/images/header.jpg";
 const SidePanel = ({ children }) => {
   return (
     <aside className="flex h-screen w-1/4 min-w-[15rem] max-w-lg flex-col bg-base-200">
-      <figure id="courseHeader" className="bg-primary">
+      <figure id="courseHeader" className="">
         <Image
           src={HeaderImg}
           alt="Random lines of decorative, multi-colored code."
-          layout="fill"
+          layout="intrinsic"
         />
       </figure>
-      {children}
+      <div className="flex flex-col gap-2 p-4">{children}</div>
     </aside>
   );
 };
